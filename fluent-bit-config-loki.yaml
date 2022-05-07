@@ -33,7 +33,7 @@ data:
         Host            ${LOKI_REST_HOST}
         Port            ${LOKI_REST_PORT}
         auto_kubernetes_labels true
-        labels          job=fluentbit,env=test,biz=qbweb,source=k8s
+        labels          job=fluentbit,source=k8s
         line_format     json
   parsers.conf: |-
     [PARSER]
